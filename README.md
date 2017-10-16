@@ -5,21 +5,21 @@ This is my implementation of a fixed-sized hashmap. I used an underlying self-ba
 ## How to compile and run
 First, navigate to the /src folder. Then, in the command line:
 1. Run `javac cli/*.java` to compile the cli package.
-2. Run `javac hashmap/*.java` to compile the hashmap package. This should work and the FixedSizeHashMapTester should also 
-compile if the CLASSPATH of your local system points to the right directory where your junit.jar file lives; if it does 
-not work, then simply run "javac hashmap/FixedSizeHashMap.java" to compile the program without the JUnit tests.
+2. Run `javac hashmap/*.java` to compile the hashmap package. This should work and the `FixedSizeHashMapTester` should also 
+compile if the `CLASSPATH` of your local system points to the right directory where your junit.jar file lives; if it does 
+not work, then simply run `javac hashmap/FixedSizeHashMap.java` to compile the program without the JUnit tests.
 3. Run `java cli.Main` to start the program.
 
 ## Available commands in the CLI:
-1. `construct <size>` - constructs a new FixedSizeHashMap of size <size>. Must be run before FixedSizeHashMap functionality can be peformed.
-2. `set <key> <value>` - adds <value> to the hashmap with key <key>.
+1. `construct <size>` - constructs a new FixedSizeHashMap of size `<size>`. Must be run before `FixedSizeHashMap` functionality can be peformed.
+2. `set <key> <value>` - adds `<value>` to the hashmap with key `<key>`.
 3. `get <key>` - retrieves, but does not remove, the <value> associated with <key> in the hashmap.
-4. `delete <key>` - removes from the hashmap, and returns, the <value> associated with <key> in the hashmap.
+4. `delete <key>` - removes the `<value>` associated with `<key>` from the hashmap, and returns it.
 5. `load` - outputs the load of the hashmap (defined as current size / capacity).
 6. `quit` - exits the program.
 
 ## Tests
-JUnit tests have been included in the hashmap package. To test (assuming FixedSizeHashMapTester is successfully compiled):
+JUnit tests have been included in the hashmap package. To test (assuming `FixedSizeHashMapTester` is successfully compiled):
 1. Navigate to the `/src` folder.
 2. Run `java -cp .:<path to junit.jar file>:<path to hamcrest-core.jar file> org.junit.runner.JUnitCore hashmap.FixedSizeHashMapTester`.
 
